@@ -3,19 +3,30 @@ import { Input } from './components/Input'
 
 function App() {
 
+  const nome = 'Angelo'
+
   return (
     <>
-    
+      <h1>Conferir CEP - {nome}</h1>
 
-     <h1>Conferir CEP</h1>
 
-     <Input /> <br />
+      <Input 
+        label="CEP" 
+        name="cep" 
+        id="cep" 
+      /> 
+      <br/>
+      <Input
+        label="Logradouro"
+        name="logradouro"
+        id="logradouro"
+      />
 
-     <label htmlFor="cep">CEP</label>
-     <input type="text" name="cep" id="cep"/> <br />
-    
-     <label htmlFor="logradouro">Logradouro</label>
-     <input type="text" name='logradouro' id='logradouro' />
+      {/* <label htmlFor="cep">CEP</label>
+      <input type="text" name="cep" id="cep" /> <br />
+
+      <label htmlFor="logradouro">Logradouro</label>
+      <input type="text" name="logradouro" id="logradouro" /> */}
     </>
   )
 }

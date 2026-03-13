@@ -1,9 +1,9 @@
-export function Input(label, name, id) {
+export function Input(props) {
     return (
-             <div>
-                <label htmlFor={id}>{label}</label>
-                <input type="text" name={name} id={id}/> <br />
-                
-             </div>
+        <div>
+            <label htmlFor={props.id}>{props.label}</label>
+            <input type="text" name={props.name} id={props.id} />
+            <br />
+        </div>
     )
 }
